@@ -94,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <div class="kt-login__body">
                                 <div class="kt-login__logo">
                                     <a href="#">
-                                        <img src="./assets/media/company-logos/logo-2.png">
+                                        <img src="/metronic/media/company-logos/logo-2.png">
                                     </a>
                                 </div>
                                 <div class="kt-login__signin">
@@ -121,7 +121,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     </div>
                 </div>
-                <div class="kt-grid__item kt-grid__item--fluid kt-grid__item--center kt-grid kt-grid--ver kt-login__content" style="background-image: url(./assets/media//bg/bg-4.jpg);">
+                <div class="kt-grid__item kt-grid__item--fluid kt-grid__item--center kt-grid kt-grid--ver kt-login__content" style="background-image: url(/metronic/media//bg/bg-4.jpg);">
                     <div class="kt-login__section">
                         <div class="kt-login__block">
                             <h3 class="kt-login__title">Join Our Community</h3>
