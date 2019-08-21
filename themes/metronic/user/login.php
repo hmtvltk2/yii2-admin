@@ -106,7 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         <?= $form->field($model, 'username') ?>
                                         <?= $form->field($model, 'password')->passwordInput() ?>
                                         <div class="kt-login__extra">
-                                            <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                                            <?= $form->field($model, 'rememberMe')->checkbox(['class' => 'kt-checkbox']) ?>
                                         </div>
                                         <div class="kt-login__actions">
                                             <?= Html::submitButton(Yii::t('rbac-admin', 'Login'), ['class' => 'btn btn-brand btn-pill btn-elevate', 'name' => 'login-button']) ?>
