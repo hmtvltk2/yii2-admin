@@ -1,6 +1,7 @@
 <?php
+
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -17,11 +18,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'reset-password-form']); ?>
-                <?= $form->field($model, 'password')->passwordInput() ?>
-                <?= $form->field($model, 'retypePassword')->passwordInput() ?>
-                <div class="form-group">
-                    <?= Html::submitButton(Yii::t('rbac-admin', 'Save'), ['class' => 'btn btn-primary']) ?>
-                </div>
+            <?= $form->field($model, 'password')->passwordInput() ?>
+            <?= $form->field($model, 'retypePassword')->passwordInput() ?>
+            <div class="form-group">
+                <?= Html::submitButton(Yii::t('rbac-admin', 'Save'), ['class' => 'btn btn-primary']) ?>
+            </div>
             <?php ActiveForm::end(); ?>
         </div>
     </div>
