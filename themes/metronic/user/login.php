@@ -103,8 +103,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                     </div>
                                     <div class="kt-login__form">
                                         <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
-                                        <?= $form->field($model, 'username') ?>
-                                        <?= $form->field($model, 'password')->passwordInput() ?>
+                                        <?= $form->field($model, 'username')->textInput(['placeholder' => 'Tên đăng nhập'])->label(false) ?>
+                                        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Mật khẩu'])->label(false) ?>
                                         <div class="kt-login__extra">
                                             <div class="kt-checkbox">
                                                 <?= $form->field($model, 'rememberMe')->checkbox() ?>
@@ -146,6 +146,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <!-- end::Global Config -->
 
     <!--begin::Global Theme Bundle(used by all pages) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/metronic/vendors/global/vendors.bundle.js" type="text/javascript"></script>
     <script src="/metronic/js/demo1/scripts.bundle.js" type="text/javascript"></script>
 
