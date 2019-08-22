@@ -56,6 +56,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <!--end::Layout Skins -->
     <link rel="shortcut icon" href="/metronic/media/logos/favicon.ico" />
+    <style>
+        .help-block {
+            width: 100%;
+            margin-top: 0.25rem;
+            font-size: 80%;
+            color: #fd397a;
+        }
+    </style>
     <script>
         var KTAppOptions = {
             "colors": {
