@@ -114,7 +114,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         <?= $form->field($model, 'username')->textInput(['placeholder' => 'Tên đăng nhập'])->label(false) ?>
                                         <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Mật khẩu'])->label(false) ?>
                                         <div class="kt-login__extra">
-                                            <?= $form->field($model, 'rememberMe', ['labelOptions' => ['class' => 'kt-checkbox']])->checkbox()->label('Ghi nhớ <span></span>') ?>
+                                            <?= $form->field($model, 'rememberMe', ['labelOptions' => ['class' => 'kt-checkbox']])->checkbox(['label' => 'Ghi nhớ <span></span>']) ?>
                                         </div>
                                         <div class="kt-login__actions">
                                             <?= Html::submitButton(Yii::t('rbac-admin', 'Login'), ['class' => 'btn btn-brand btn-pill btn-elevate', 'name' => 'login-button']) ?>
